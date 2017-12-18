@@ -1,5 +1,5 @@
-import { gamesReducer } from "../games-setup/games.reducer";
+import { sportsReducer } from "../sports/sports.reducer";
 
 export const rootReducer = {
-  gamesSetup: gamesReducer
+  sportsPage: sportsReducer
 };

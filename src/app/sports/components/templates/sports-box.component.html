@@ -1,0 +1,8 @@
+<div class="sport-app">
+  <sports-list [sports]="sports">
+  </sports-list>
+  <button type="button" (click)="add()">Add</button>
+  <sports-modify (onSportAdded)="sportWasAdded($event)" (onSportModified)="sportWasModified($event)" (onSportDeleted)="sportWasDeleted($event)"
+    [mode]="mode">
+  </sports-modify>
+</div>

@@ -2,15 +2,15 @@ import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { AppState } from "../../redux/app.state";
-import { Game } from '../model/game.model';
+import { Sport } from '../model/sport.model';
 
 @Injectable()
-export class GamesDataService {
+export class SportsDataService {
 
   constructor(private store: Store<AppState>) {}
 
-  getGames(): Observable<Array<Game>> {
-    return this.store.select(appState => appState.gamesSetup.games)
+  getSports(): Observable<Array<Sport>> {
+    return this.store.select(appState => appState.sportsPage.sports)
   }
 }
 

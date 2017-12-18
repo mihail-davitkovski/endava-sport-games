@@ -1,10 +1,10 @@
 
 import { Routes, RouterModule } from '@angular/router';  
-import { GamesBoxComponent } from './games-setup/components/games-box.component';
+import { SportsBoxComponent } from './sports/components/sports-box.component';
 
 const routes: Routes = [  
-  { path: '', pathMatch: 'full', redirectTo: 'games-setup' },
-  { path: 'games-setup', component: GamesBoxComponent }
+  { path: '', pathMatch: 'full', redirectTo: 'sports' },
+  { path: 'sports', component: SportsBoxComponent }
 ];
 
 export const routing = RouterModule.forRoot(routes);

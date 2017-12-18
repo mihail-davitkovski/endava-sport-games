@@ -5,9 +5,9 @@ import { HttpClientModule  } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { rootReducer } from '../app/redux/root.reducer';
 import { InMemoryDataService } from "../app/in-memory-data.service";
-import { GamesModule } from '../app/games-setup/games.module';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
+import { SportsModule } from './sports/sports.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { routing } from './app.routing';
     BrowserModule,
     HttpClientModule,
     routing,
-    GamesModule,
+    SportsModule,
     StoreModule.forRoot(rootReducer),
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }

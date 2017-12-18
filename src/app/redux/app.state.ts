@@ -1,5 +1,5 @@
-import { GamesSetup } from "../games-setup/model/game-setup.model";
+import { Sports } from "../sports/model/sports.model";
 
 export interface AppState {
-    readonly gamesSetup: GamesSetup;
+    readonly sportsPage: Sports;
 }
